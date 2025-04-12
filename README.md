@@ -100,3 +100,66 @@ wget https://www.csu.edu.tw/var/file/0/1000/img/1/mlogoH.png
 ```bash
 clear
 ```
+
+## 移動現在位置
+```bash
+# 相對路徑
+cd ..
+
+# 絕對路徑
+cd /home
+```
+
+## 觀看檔案內容
+```bash
+# 相對路徑
+cat ../../etc/passwd
+
+# 絕對路徑
+cat etc/passwd
+```
+
+
+## 更改擁有者/群組
+```bash
+
+# 擁有者
+chown mis shadow
+
+# 擁有者：群組
+chown mis:mis shadow
+
+# 群組
+chgrp mis shadow
+
+```
+
+
+## 更改權限
+```bash
+
+# Read 讀 4
+# Write 寫 2
+# Write 執行 1
+
+chmod 741 shadow
+
+```
+
+## vim 指令
+
+R / I replace/insert
+
+### 退出指令
+```bash
+
+esc + ":q"
+
+# 如果編輯過後不想存檔要使用
+esc + ":q!"
+
+# 如果編輯後想存檔要使用
+esc + ":wq"
+
+
+```

@@ -117,6 +117,10 @@ cat ../../etc/passwd
 
 # 絕對路徑
 cat etc/passwd
+
+# more 一頁一頁瀏覽
+# | 串接指令
+cat passwd | more
 ```
 
 
@@ -135,7 +139,6 @@ chgrp mis shadow
 ```
 
 
-## 更改權限
 ```bash
 
 # Read 讀 4

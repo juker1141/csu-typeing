@@ -171,6 +171,7 @@ esc + ":wq"
 ```bash
 
 # 新增 user
+## -M 可以不建立 home 目錄
 sudo useradd mis81311126
 
 # 查詢是否有該user 的帳號被建立
@@ -180,6 +181,15 @@ cat /etc/passwd | grep mis
 # 更改密碼
 sudo passwd mis8131126
 
-# 登入使用者（確認密碼已更新
+# 登入使用者（確認密碼已更新, switch user
 su mis8131126
+
+# 更改使用者名稱（不會改home 的名稱
+# 改成 csumis81311126 對 csu81311126 這位user
+sudo usermod -l csumis81311126 csu81311126
+
+# 刪除使用者
+sudo userdel del1234 # 不會刪除使用者目錄
+
+sudo userdel -r del1234 #會把使用者目錄刪除
 ```

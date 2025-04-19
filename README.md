@@ -166,3 +166,20 @@ esc + ":wq"
 
 
 ```
+
+# 使用者
+```bash
+
+# 新增 user
+sudo useradd mis81311126
+
+# 查詢是否有該user 的帳號被建立
+# grep 是一個文本搜索工具
+cat /etc/passwd | grep mis
+
+# 更改密碼
+sudo passwd mis8131126
+
+# 登入使用者（確認密碼已更新
+su mis8131126
+```
